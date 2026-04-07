@@ -25,7 +25,10 @@ export default function BookDetails() {
       console.log(API);
       const response = await fetch(API + "/reservations", {
         method: "POST",
-        headers: { Authorization: `Bearer ${token}` },
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify({ bookId: id }),
       });
       const result = await response.json();
