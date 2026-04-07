@@ -1,0 +1,14 @@
+.register-container {
+  width: 50%;
+  margin: 0 auto;
+  border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+}
+
+.register-container label,
+.register-container input {
+  display: block;
+  margin-bottom: 8px;
+}
