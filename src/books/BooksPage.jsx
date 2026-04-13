@@ -19,8 +19,10 @@ export default function BooksPage() {
   }, []);
 
   return (
-    <>
-      <BookList books={books} />
-    </>
+    <div className="book-list">
+      <>
+        <BookList books={books} />
+      </>
+    </div>
   );
 }

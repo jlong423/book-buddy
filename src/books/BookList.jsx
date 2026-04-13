@@ -2,18 +2,20 @@ import { Link } from "react-router";
 
 export default function BookList({ books }) {
   return (
-    <ul>
-      {books.map((book) => (
-        <BookListItem key={book.id} book={book} />
-      ))}
-    </ul>
+    <div className="book-list">
+      <ul className="book-list-item">
+        {books.map((book) => (
+          <BookListItem key={book.id} book={book} />
+        ))}
+      </ul>
+    </div>
   );
 }
 
 function BookListItem({ book }) {
   return (
-    <li>
-      <Link to={"/books/" + book.id}>
+    <li className="book-list-item">
+      <Link className="book-link" to={"/books/" + book.id}>
         <h2>{book.title}</h2>
         <img
           src={book.coverimage}

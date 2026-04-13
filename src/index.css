@@ -47,3 +47,26 @@
 .login-container button:hover {
   background-color: lightslategray;
 }
+
+.book-list-item {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(10, auto);
+  grid-auto-columns: minmax(0, 1fr);
+  max-width: calc(6 * 250px);
+}
+
+.book-link {
+  text-decoration: none;
+  color: red;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+
+  padding: 15px;
+  font-size: 18px;
+  text-decoration: none;
+}

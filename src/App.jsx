@@ -17,7 +17,7 @@ export default function App() {
         <Route path="/books/:id" element={<BookDetails />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/account" element={<Account />} />
+        <Route path="/users/me" element={<Account />} />
         <Route path="*" element={<Error404 />} />
       </Route>
     </Routes>

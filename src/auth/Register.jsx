@@ -31,7 +31,7 @@ export default function Register() {
         <form action={tryRegister}>
           <label>
             First Name
-            <input type="text" name="first name" required />
+            <input type="text" name="first name" />
           </label>
           <label>
             Last Name
